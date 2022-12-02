@@ -1,0 +1,63 @@
+<!--persona 1-->
+<!--<h2>Dettagli persone:</h2>
+<h2>{{ persona.name }} {{ persona.surname }}</h2>
+<div>
+  <label for="name">nome</label>
+  <input id="name" [(ngModel)]="persona.name" placeholder="name" />
+  <br />
+  <label for="cognome">cognome</label>
+  <input id="cognome" [(ngModel)]="persona.surname" placeholder="cognome" />
+</div>
+
+<div><span>name: </span>{{ persona.name }}</div>
+<div><span>cognome: </span>{{ persona.surname }}</div>
+<div><span>età: </span>{{ persona.age }}</div>
+
+persona 2
+<h2>{{ persona1.name }} {{ persona1.surname }}</h2>
+<div>
+  <label for="name">nome</label>
+  <input id="name" [(ngModel)]="persona1.name" placeholder="name" />
+  <br />
+  <label for="cognome">cognome</label>
+  <input id="cognome" [(ngModel)]="persona1.surname" placeholder="cognome" />
+</div>
+
+<div><span>name: </span>{{ persona1.name }}</div>
+<div><span>cognome: </span>{{ persona1.surname }}</div>
+<div><span>età: </span>{{ persona1.age }}</div>-->
+
+<!--nostra lista-->
+<h2>I miei compagni di classe</h2>
+<ul class="persone">
+  <li *ngFor="let p of persona">
+    <button type="button" (click)="onselect(p)">
+      <span class="name">{{ p.name }}</span> &nbsp;
+      <span class="surname">{{ p.surname }}</span
+      >&nbsp;
+      <span class="age">{{ p.age }} anni</span>
+    </button>
+  </li>
+</ul>
+
+<div *ngIf="personaselezionata">
+  <h2>{{ personaselezionata.surname | uppercase }} details</h2>
+  <table>
+    <tr>
+      <td>Name:</td>
+      <td>{{ personaselezionata.name }}</td>
+    </tr>
+    <tr>
+      <td>Surname:</td>
+      <td>{{ personaselezionata.surname }}</td>
+    </tr>
+    <tr>
+      <td>Age:</td>
+      <td>{{ personaselezionata.age }} anni</td>
+    </tr>
+    <tr>
+      <td>immagine:</td>
+      <img [src]="personaselezionata.immagine" width="200" height="150" />
+    </tr>
+  </table>
+</div>
