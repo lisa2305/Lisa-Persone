@@ -6,33 +6,32 @@ export const PERSONE: Persona[] = [
     surname: ' Giordy',
     age: 17,
     immagine:
-      'https://www.minimaetmoralia.it/wp/wp-content/uploads/2020/01/1sally-640x420.jpg',
+      'https://www.topolino.it/wp-content/uploads/2019/11/minni_intera.png',
   },
   {
     name: 'Sara',
     surname: ' Scatto',
     age: 16,
-    immagine: 'https://media.internazionale.it/images/2016/02/04/120867-sd.jpg',
+    immagine: 'https://it.wikifur.com/w/images/7/78/Paperina.png',
   },
   {
     name: 'Ale',
     surname: ' Cogno',
     age: 17,
-    immagine:
-      'https://lamenteemeravigliosa.it/wp-content/uploads/2019/03/persone-che-risultano-irritanti-il-prepotente.jpg',
+    immagine: 'https://radiobau.it/wp-content/uploads/2017/02/Pluto2.jpg',
   },
   {
     name: 'Filippo',
     surname: ' Boni',
     age: 16,
     immagine:
-      'https://staticfanpage.akamaized.net/wp-content/uploads/sites/5/2018/08/furious-2514031_640.jpg',
+      'https://www.topolino.it/wp-content/uploads/2019/12/pippointera.png',
   },
   {
     name: 'Marco',
     surname: ' Bridi',
     age: 18,
     immagine:
-      'https://www.millionaire.it/wp-content/uploads/2020/04/Eric-YuanXX1X-scaled-e1590425604704.jpg',
+      'https://it.wikifur.com/w/images/thumb/d/d4/Mickey_Mouse.png/521px-Mickey_Mouse.png',
   },
 ];
